@@ -1,0 +1,28 @@
+# DuCyCADA — Python dependency list
+# Install with:  pip install -r requirements.txt
+
+# Core deep learning
+torch>=2.0.0
+torchvision>=0.15.0
+torchsummary>=1.5.1
+
+# Image processing
+Pillow>=9.0.0
+opencv-python>=4.7.0
+scikit-image>=0.20.0
+
+# Scientific computing
+numpy>=1.24.0
+pandas>=1.5.0
+scipy>=1.10.0
+
+# Metrics
+torchmetrics>=1.6.1
+
+# Visualization
+matplotlib>=3.7.0
+plotly>=5.14.0
+
+# Utilities
+tqdm>=4.65.0
+scikit-learn>=1.2.0
