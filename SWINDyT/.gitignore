@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data & large files
+*.pt
+*.pth
+*.h5
+*.npy
+*.npz
+archive*/
+data/
+
+# Results (keep directory, ignore contents)
+results/*
+!results/.gitkeep
+
+# Saved models (keep directory, ignore weights)
+saved_models/*
+!saved_models/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
