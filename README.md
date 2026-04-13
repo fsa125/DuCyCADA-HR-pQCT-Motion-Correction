@@ -144,8 +144,8 @@ Target images use VGS ≥ 2 (real-world motion corruption, unpaired).
 
 ```bash
 # Clone the repository
-git clone https://github.com/fsa125/DuCyCADA-HR-pQCT-Motion-Correction/tree/main
-cd DuCyCADA-SWINDyT
+git clone https://github.com/fsa125/DuCyCADA-HR-pQCT-Motion-Correction.git
+cd DuCyCADA-HR-pQCT-Motion-Correction-main
 
 # Install shared dependencies
 pip install -r DuCyCADA/requirements.txt
@@ -180,7 +180,7 @@ python preload_data.py \
     --dataset_path      ../Dataset/ \
     --train_hr_subdir   "Dist rad train img_new" \
     --train_lr_subdir   "Dist rad train img_new simz" \
-    --da_weights        ../DuCyCADA/saved_models/DA_Dist_rad_generator_KL_Final_RZ_anika.pth \
+    --da_weights        ../DuCyCADA/saved_models/DA_Dist_rad_generator_KL_Final_RZ.pth \
     --output_pt         stacked_dataset_DA_Dist_RAD.pt \
     --num_workers       4
 ```
@@ -271,7 +271,7 @@ python plot_results.py \
 ```bash
 cd DuCyCADA
 python evaluate.py \
-    --model  saved_models/DA_dist_tib_generator_KL_Final_Z_anika.pth \
+    --model  saved_models/DA_dist_tib_generator_KL_Final_Z.pth \
     --output Results/DA_Dist_tib_results/
 ```
 
@@ -301,13 +301,16 @@ See `DuCyCADA/requirements.txt` and `SWINDyT/requirements.txt` for the full list
 ## Citation
 
 If you use this code or the HR-MoCo47K dataset in your research, please cite
-the corresponding paper (add citation here).
+the corresponding papers:
+
+1. Coming soon.
+
+
+2. F. Sadik, C. L. Newman, S. J. Warden and R. K. Surowiec, "Simulating Sinogram-Domain Motion and Correcting Image-Domain Artifacts Using Deep Learning in HR-pQCT Bone Imaging," in IEEE Transactions on Radiation and Plasma Medical Sciences, doi: 10.1109/TRPMS.2025.3617225. keywords: {Motion artifacts;Bones;Imaging;Image reconstruction;Computed tomography;Translation;Generative adversarial networks;Signal to noise ratio;Mathematical models;Training;Bone;HR-pQCT;Motion;Sinogram;ESWGAN-GP;SNR;SSIM;VIF;Deep Learning},
 
 ---
 
 ## License
-
-This project is released under the MIT License.
 
 The VIF metric implementation is adapted from
 [torchmetrics](https://github.com/Lightning-AI/torchmetrics) and
