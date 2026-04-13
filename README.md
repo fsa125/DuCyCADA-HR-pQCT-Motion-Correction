@@ -33,7 +33,7 @@ At inference time **only the trained SWINDyT model is needed**.
 
 ```
 
-![Architecture Diagram](Images/Architecture.png)
+![Architecture Diagram](Images/Architecture.jpg)
 
 
 
