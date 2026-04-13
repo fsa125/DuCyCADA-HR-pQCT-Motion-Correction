@@ -31,18 +31,14 @@ At inference time **only the trained SWINDyT model is needed**.
 ## Architecture overview
 
 
-```
-<p align="center">
-  <img src="Images/Architecture.jpg" width="700">
-</p>
+
+![Architecture](Images/Architecture.jpg)
 
 
 
 
 
 
-
-```
 ---
 
 ## Repository structure
