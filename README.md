@@ -37,7 +37,7 @@ At inference time **only the trained SWINDyT model is needed**.
 ---
 ## Qualitative results
 
-![Architecture](Images/Qualitative_results.jpg)
+![Results](Images/Qualitative_Results.jpg)
 
 ---
 
