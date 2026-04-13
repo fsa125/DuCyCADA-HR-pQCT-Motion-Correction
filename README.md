@@ -144,7 +144,7 @@ Target images use VGS ≥ 2 (real-world motion corruption, unpaired).
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/DuCyCADA-SWINDyT.git
+git clone https://github.com/fsa125/DuCyCADA-HR-pQCT-Motion-Correction/tree/main
 cd DuCyCADA-SWINDyT
 
 # Install shared dependencies
