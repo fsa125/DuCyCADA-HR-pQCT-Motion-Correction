@@ -28,6 +28,22 @@ At inference time **only the trained SWINDyT model is needed**.
 
 ---
 
+## Architecture overview
+
+
+```
+
+![Architecture Diagram](Images/Architecture.png)
+
+
+
+
+
+
+
+```
+---
+
 ## Repository structure
 
 ```
