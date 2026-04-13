@@ -15,7 +15,7 @@ on the adapted data.
 Stage 0 ── Pre-training          DuCyCADA trains on (simulated source ↔ real target)
                                        │
                                        ▼
-Stage 1 ── Domain adaptation     G_forward_da maps source images → adapted domain
+Stage 1 ── Domain adaptation     G_forward_da maps source images → adapted domain (store the G_backward weights from DuCyCADA)
                                        │
                                        ▼
 Stage 2 ── Supervised training   SWINDyT trains on adapted (X_adapted, Y_s) pairs
@@ -82,15 +82,16 @@ RFIQ/               # NIQE, BRISQUE, CLIPIQA, MUSIQ, LPIPS_Simple
 
 DuCyCADA is an unsupervised domain adaptation network that aligns simulated
 (source) and real-scanner (target) image distributions without requiring
-paired target ground truth. It extends CycleGAN with an explicit domain
-discriminator and KL-divergence alignment loss.
+paired target ground truth.It employs two CycleGANs: one that learns representations in the source domain 
+and another that learns representations in the target domain. The representations 
+from both domains are then aligned synergistically using a KL-divergence–driven discriminator.
 
 **Architecture:**
 
 | Component | Role |
 |---|---|
 | `G_forward` (G_F) | Source/Target LR → predicted clean HR |
-| `G_backward` (G_B) | HR → reconstructed LR / target domain |
+| `G_backward` (G_B) | HR → reconstructed LR / psuedo corrupted |
 | `D_forward` (D_H) | Real vs. fake HR discriminator |
 | `D_backward` (D_B) | Real vs. reconstructed LR discriminator |
 | `D_forward_DA` (D_A) | Domain-alignment discriminator (source vs. target HR) |
@@ -134,7 +135,7 @@ adapted pairs.
 | Distal Tibia | Target (T) | 14 | 2,352 | ≥2 |
 | **Total** | | **283** | **47,544** | — |
 
-Source images use VGS (vibration grade score) = 1 (no motion).
+Source images use VGS (Visually Graded Score) = 1 (no motion).
 Target images use VGS ≥ 2 (real-world motion corruption, unpaired).
 
 ---
