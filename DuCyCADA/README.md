@@ -149,7 +149,7 @@ If you use DuCyCADA in your research, please cite the corresponding paper
 
 ## License
 
-This project is released under the MIT License.  
+
 The VIF metric implementation (`ducycada/metrics.py`) is adapted from
 [torchmetrics](https://github.com/Lightning-AI/torchmetrics) and
 [piq](https://github.com/photosynthesis-team/piq), both under Apache 2.0.
