@@ -32,8 +32,9 @@ At inference time **only the trained SWINDyT model is needed**.
 
 
 ```
-
-![Architecture Diagram](Images/Architecture.jpg)
+<p align="center">
+  <img src="Images/Architecture.jpg" width="700">
+</p>
 
 
 
