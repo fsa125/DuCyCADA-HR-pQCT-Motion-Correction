@@ -7,6 +7,8 @@ bridges the gap between simulated and real-world motion corruption through
 unsupervised domain adaptation, then trains a supervised correction network
 on the adapted data.
 
+Paper link: https://openaccess.thecvf.com/content/CVPR2026W/CV4Clinic2026/html/Sadik_Bridging_the_Simulation-to-Real_Domain_Gap_in_High-Resolution_CT_Motion_Correction_CVPRW_2026_paper.html
+
 ---
 
 ## Pipeline overview
