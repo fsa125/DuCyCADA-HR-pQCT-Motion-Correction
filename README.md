@@ -316,7 +316,8 @@ See `DuCyCADA/requirements.txt` and `SWINDyT/requirements.txt` for the full list
 If you use this code or the HR-MoCo47K dataset in your research, please cite
 the corresponding papers:
 
-1. Coming soon.
+1. Farhan Sadik, Anika Mathur, Michael Wan, Christopher L. Newman, Stuart J. Warden, and Rachel K. Surowiec. Bridging the simulation-to-real domain gap in high-resolution ct
+motion correction with a dual-cyclegan framework. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, pages 6782–6792, 2026.
 
 
 2. F. Sadik, C. L. Newman, S. J. Warden and R. K. Surowiec, "Simulating Sinogram-Domain Motion and Correcting Image-Domain Artifacts Using Deep Learning in HR-pQCT Bone Imaging," in IEEE Transactions on Radiation and Plasma Medical Sciences, doi: 10.1109/TRPMS.2025.3617225. keywords: {Motion artifacts;Bones;Imaging;Image reconstruction;Computed tomography;Translation;Generative adversarial networks;Signal to noise ratio;Mathematical models;Training;Bone;HR-pQCT;Motion;Sinogram;ESWGAN-GP;SNR;SSIM;VIF;Deep Learning},
